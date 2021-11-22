@@ -40,7 +40,7 @@ describe("shuffleArray should", () => {
   // Test 2
 
   let result = shuffleArray(testArray);
-  test("All items from the testArray are in the returned array", () => {
+  test("All array items from the testArray are in the returned array", () => {
     expect(result).toEqual(
       expect.arrayContaining([
         expect.objectContaining({ name: "Robot 1" }),
@@ -49,6 +49,7 @@ describe("shuffleArray should", () => {
         expect.objectContaining({ name: "Robot 4" }),
         expect.objectContaining({ name: "Robot 5" }),
         expect.objectContaining({ name: "Robot 6" }),
+        expect.objectContaining({ name: "Robot 7" }),
       ])
     );
   });
